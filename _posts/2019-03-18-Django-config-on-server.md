@@ -121,7 +121,7 @@ to deactivate the envronment
   (venv) $ touch 'templates/pages/index.html'
   (venv) $ touch 'templates/pages/about.html'
   ```
-  Create a `base.html` that handles the general content with `{% block content %}`, and modify `index.html` and the others with `{% extends 'base.html %}` and other metaprogramming template stuffs.
+  Create a `base.html` that handles the general content with `{{ "{% block content" }}%}`, and modify `index.html` and the others with `{{ "{% extends 'base.html" }}%}` and other metaprogramming template stuffs.
 1. How to handle static files and paths
   1. configure static files in the project, go to `settings.py`
     ```
@@ -137,8 +137,8 @@ to deactivate the envronment
     and update the static files project management with `python manage.py collectstatic`
   1. create some directories inside `manillas/static` and inside the following `css`, `js`, `webfonts`
   1. create `img` directory inside `manillas/static` with only the images that will be static.
-  1. use `{% extends 'base.html' %}` and `{% load static %}` to handle urls inside a template partial `{% url 'index' %}` for an internal hyperlink.
-  1. use a `partials` to handle top, navigation and footer bar for example (`partials/_topbar.html` and use (`{% include 'partials/_topbar.html' %}`) inside `base.html`).
+  1. use `{{ "{% extends 'base.html'" }}%}` and `{{ "{% load static" }}%}` to handle urls inside a template partial `{{ "{% url 'index'" }}%}` for an internal hyperlink.
+  1. use a `partials` to handle top, navigation and footer bar for example (`partials/_topbar.html` and use (`{{ "{% include 'partials/_topbar.html'" }}%}`) inside `base.html`).
 1. POSTGRESQL
   1. `sudo apt update && sudo apt install postgresql postgresql-contrib`
   1. check is working `sudo -u postgres psql` and `\q` for quit postgres
