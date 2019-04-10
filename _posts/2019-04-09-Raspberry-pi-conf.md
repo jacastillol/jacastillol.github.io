@@ -30,13 +30,13 @@ mathjax: "true"
 If you have troubles see (here)[https://pimylifeup.com/raspberry-pi-rfid-rc522/].
 
 ## Setting Python 3
-    ```bash
-    $ sudo apt update
-    $ sudo apt upgrade
-    $ sudo apt install python3-dev python3-pip
-    $ sudo pip3 install spidev
-    $ sudo pip3 install mfrc522
-    ```
+```bash
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install python3-dev python3-pip
+$ sudo pip3 install spidev
+$ sudo pip3 install mfrc522
+```
 
 ## Setting remote access from SSH for Raspberry Pi
 1. Select __Interfacing Options__ from the following command and then enable __SSH__
