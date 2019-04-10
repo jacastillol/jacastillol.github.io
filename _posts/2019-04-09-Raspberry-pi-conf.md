@@ -1,5 +1,5 @@
 ---
-title: "Initial configuration for the Raspberry Pi and RFID throw SPI"
+title: "Initial config for the Raspberry Pi, SPI and RFID modules"
 date: 2019-03-14
 tags: [python, iot]
 header:
@@ -11,8 +11,8 @@ mathjax: "true"
 # First Configuration for the Raspberry Pi
 
 ## Installing Raspian
-1. Download from (here)[https://www.raspberrypi.org/downloads/raspbian/] the lastest version
-1. You can use (Etcher)[https://www.balena.io/etcher/] to create a flash card or a USB.
+1. Download from [here](https://www.raspberrypi.org/downloads/raspbian/) the lastest version
+1. You can use [Etcher](https://www.balena.io/etcher/) to create a flash card or a USB.
 1. Insert flash card on your Raspberry, and follow the instructions
 
 ## Setting the SPI module for devices
@@ -27,7 +27,7 @@ mathjax: "true"
     $ lsmod | grep spi
     ```
     you will see a line with `spi_bcm2835`.
-If you have troubles see (here)[https://pimylifeup.com/raspberry-pi-rfid-rc522/].
+If you have troubles see [here](https://pimylifeup.com/raspberry-pi-rfid-rc522/).
 
 ## Setting Python 3
 ```bash
